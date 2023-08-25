@@ -8,7 +8,7 @@
         table, th, td {
             border: 1px solid rgba(233, 232, 232, 0.89);
             border-collapse: collapse;
-            width: 400px;
+            width: 200px;
             padding: 10px;
             margin-left: 20px;
         }
@@ -23,7 +23,7 @@
             padding: 10px;
         }
 
-        section#fontTabela {
+        div#fontTabela {
             font-family: sans-serif;
             display: block;
         }
@@ -32,15 +32,16 @@
 <body>
 
     <!-- TANTECIPANDO UMA PARTE DA LANDINPAGE DO SITE QUE O PROFESSOR VAI FAZER-->
-    <section id="fontTabela">
-        <table style="width: 100%;">
+    <div id="fontTabela">
+        <table style="width: 40%;">
+        <caption>Pricing table</caption>
             <thead >
-                <caption>Pricing table</caption>
                 <tr>
                     <th style="width: 40%;">Title 1</th>
                     <th>Title 2</th>
                     <th>Title 3</th>
                 </tr>
+            </thead>
                 <tbody>
                     <tr>
                         <td>Content 1</td>
@@ -72,10 +73,7 @@
                         <td colspan="3">Footer 1</td>
                     </tr>
                 </tfoot>
-            </thead>
-
-
         </table>
-    </section>
+    </div>
 </body>
 </html>
