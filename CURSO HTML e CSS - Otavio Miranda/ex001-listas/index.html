@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listas</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav {
+            background-color: rgb(255, 0, 0);
+            height: 58px;
+            display: flex; /*Pros links do MENU (tag <a> de link) fique tudo do lado e nao em baixo*/
+            
+            /*[justify-content: center;] alinha um MENU ao CENTRO (mas na parte do topo, meio não) */
+            
+            align-items: center; /* alinha o MENU no MEIO */
+            font-size: 1.8em;
+        }
+        
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 10px 20px;
+            display: block;
+            text-transform: uppercase; /* Deixa as letras maiuscula */
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        a:hover {
+            background-color: rgb(196, 4, 4);
+        }
+
+        ul#espaco {
+            margin-top: 70px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Produt</a></li>
+
+        </ul>
+    </nav>
+
+
+    
+    <ul id="espaco">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <ol type="I">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <dl> <!-- <dl> - tag define a lista de descrição --> 
+        <dt>Café</dt> <!-- <dt> - tag define o termo (nome) -->
+        <dd> - bebida quente preta</dd> <!-- <dd> - tag descreve cada termo -->
+        <dt>Leite</dt>
+        <dd> - Bebida gerada branca</dd>
+    </dl>
+
+</body>
+</html>

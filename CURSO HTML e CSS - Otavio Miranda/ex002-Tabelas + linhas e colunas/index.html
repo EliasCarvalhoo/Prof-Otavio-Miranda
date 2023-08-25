@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas + linhas e colunas </title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+       
+        table {
+            border-collapse: collapse;
+            border-spacing: 40px;
+        }
+  
+        th, td {
+            width: 150px;
+            height: 40px;
+            border-collapse: collapse;
+            border: 1px solid black;
+            text-align: center;
+            border-color: rgb(4, 4, 116);
+        }
+
+        tr:nth-child() {
+            background-color: aqua;
+        }
+
+
+        table caption {
+            caption-side: top;
+            text-align: center;
+            font-style: italic;
+            font-size: 14px;
+            margin: 5px 0px;
+        }
+        
+        tfoot, thead {
+            background-color: rgba(189, 188, 188, 0.322);
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Tabelas</h1>
+    <table>
+        <caption>Essa é a legenda da minha tabela</caption>
+        <thead>
+            <tr>
+                <th>Titulo 1</th>
+                <th>Titulo 1</th>
+                <th>Titulo 1</th>
+            </tr>     
+        </thead>   
+        <tbody>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+            <tr>
+                <td colspan="2">Corpo 1</td>
+                
+                <td>Corpo 3</td>
+            </tr>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+        
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+        </tfoot>
+           
+        
+
+
+
+    </table>
+</body>
+</html>

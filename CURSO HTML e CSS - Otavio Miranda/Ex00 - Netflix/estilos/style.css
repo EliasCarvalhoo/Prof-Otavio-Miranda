@@ -1,0 +1,53 @@
+@charset "UTF-8" ;
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../image/fundo-netflix.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;   
+    
+    
+    
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+header, p, a {
+    font-size: 1.6em;
+    
+}
+
+
+
+header#heading {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header#heading, img {
+    
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    
+
+
+}
+
+
+img {
+    width: 200px;
+}
+
+
+
