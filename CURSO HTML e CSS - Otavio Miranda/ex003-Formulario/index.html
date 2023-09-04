@@ -4,15 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+       
+        #nome {
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
 
    <form action="#" method="get" target="_blank" autocomplete="off">
         <p>O meu Formulário</p>
         <p>
-            <label for="nome">Nome</label> <br>
+            <label for="nome">Nome</label> 
             <input type="text" name="Nome" id="nome" placeholder="Seu nome" required>
+        <p>
+        <p>
+            <label for="nome">Seu e-mail</label> <br>
+            <input type="email" name="email" id="email" placeholder="Ex.: email@gmail.com" required>
+        <p>
+        <p>
+            <label for="nome">ARQUIVO</label> <br>
+            <input type="file" name="file" id="file" accept=".png, .svg" multiple> <!--accept = pra qual tipo de arquivos pode enviar--> <!--multiple = Pra pessoa poder enviar mais de um arquivo-->
+        <p>
+            <label for="dev">Sou um dev</label> 
+            <input type="checkbox" id="dev" name="dev" value="sim" checked>
         </p>
+        <p>
+            Gênero: <br>
+            <label for="fem">Feminino</label>
+            <input type="radio" name="genero" id="fem"><br>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="genero" id="mas" checked>
+
+        </p>
+        <p>
+            <label for="nome">Data</label> 
+            <input type="date" name="data" id="data"  value="2023-08-28">
+        <p>
+        <p>
+            <label for="nome">Data e Hora</label> 
+            <input type="datetime-local" name="dataHora" id="dataHora" value="2023-08-28T16:00" >
+        <p>
+        <p>
+            <label for="nome">Hora</label> 
+            <input type="time" name="hora" id="hora" value="16:00" >
+        <p>
+        <p>
+            <label for="nome">Cor Preferida</label> 
+            <input type="color" name="cor" id="cor"  >
+        <p>
+        </p>
+        
+        
+        <p>
+            Escolha seu idioma da Web favorito<br>
+            <input type="radio" id="html" name="fav_language" value="HTML" >
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS" checked>
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label><br>
+        </p>
+        <p>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label>
+        </p>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
