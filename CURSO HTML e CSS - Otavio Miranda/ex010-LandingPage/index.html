@@ -9,7 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body class="main-bg">
+<body>
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
      <aside class="menu white-bg">
         <div class="main-content menu-content">
             <h1>
@@ -17,7 +20,7 @@
             </h1>
 
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">intro</a></li>
                     <li><a href="#grid-one">top 3</a></li>
                     <li><a href="#gallery">gallery</a></li>
@@ -223,7 +226,10 @@
                 </fieldset>
             </div>
         </div>
-
      </section>
+
+     <footer id="footer" class="footer white-bg">
+        <p><a rel="nofollow" href="https://beacons.ai/otaviomiranda" target="_blank">Feito com <span class="heart">❤</span> por Otávio Miranda</a></p>
+     </footer>
 </body>
 </html>
